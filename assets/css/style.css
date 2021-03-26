@@ -3033,3 +3033,30 @@ E. Template Specific Elements
 .custommarginitem{
     margin-bottom: 0em !important;
 }
+
+.hrbaseline{
+    width: 2%;
+    border-top: 1px solid white;
+    color: red;
+    display: inline-block;
+    position: relative;
+}
+
+.hrgauche{
+    right: 0.25%;
+}
+
+.hrdroite{
+    left: 0.25%;
+}
+
+.h6line{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.baseline{
+    margin-bottom: -10px;
+}
