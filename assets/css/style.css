@@ -773,7 +773,7 @@ a:hover {
 p {
     line-height: 1.6875rem;
     margin-bottom: 1.875rem;
-    opacity: .5;
+    /*opacity: .5;*/
 }
 
 .ts-font-weight__normal {
@@ -2980,6 +2980,14 @@ E. Template Specific Elements
     color: #FF5914;
 }
 
+.t-komeet{
+    color: #FF9505;
+}
+
+.t-gedimat{
+    color: #d05340;
+}
+
 .t-red{
     color: #dc2030;
 }
@@ -3007,6 +3015,18 @@ E. Template Specific Elements
 .normal-size{
     max-height: 70%;
     max-width: 70%;
+    text-align: center;
+}
+
+.full-size{
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.full-size5{
+    max-height: 80%;
+    max-width: 80%;
     text-align: center;
 }
 
@@ -3059,4 +3079,45 @@ E. Template Specific Elements
 
 .baseline{
     margin-bottom: -10px;
+}
+
+.subtitle-feature{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.acquis{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.skill-name{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.skill-icon{
+    max-height: 20%;
+    max-width: 20%;
+    text-align: center;
+}
+
+.font-picture{
+    max-height: 50%;
+    max-width: 50%;
+    text-align: center;
+}
+
+.skill-hr{
+    background: white;
+    width: 50%;
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.ml-custom-left{
+    margin-left: 4em;
 }
