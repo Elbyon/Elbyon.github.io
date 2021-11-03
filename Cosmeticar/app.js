@@ -12,6 +12,9 @@ if (NodeList.prototype.forEach === undefined){
 }
 
 var activeArea = function(id) {
+    var fullId = 'list-' + id
+    var libelle = document.getElementById(fullId).textContent
+    var thezone = document.getElementById("zone").value = libelle
     map.querySelectorAll('.is-active').forEach(function (item){
         item.classList.remove('is-active')
     })
@@ -20,10 +23,14 @@ var activeArea = function(id) {
         document.querySelector('#region-' + id).classList.add('is-active')
     }
     
+    
+    /*if (a.classList.contains('is-active')){
+        activeArea()
+    }*/
 }
 
 paths.forEach(function (path){
-    path.addEventListener('mouseenter', function (e){
+    path.addEventListener('click', function (e){
         //debugger
         //console.log('test')
         var id = this.id.replace('region-','')
@@ -32,12 +39,8 @@ paths.forEach(function (path){
 })
 
 links.forEach(function (link){
-    link.addEventListener('mouseenter', function (){
+    link.addEventListener('click', function (){
         var id = this.id.replace('list-', '')
         activeArea(id)
     })
-})
-
-map.addEventListener('mouseover', function(){
-    activeArea()
 })

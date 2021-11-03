@@ -1,5 +1,10 @@
+*{
+    font-family: 'Montserrat';
+}
+
 .map{
     overflow: hidden;
+
 }
 
 .map__image{
@@ -18,14 +23,121 @@
 	fill: #02B3DF;
 }
 
-.map__list{
-    float: right;
+/*Report Zone*/
+
+.report{
+    margin-top: 5%;
+    float: left;
+    width: 35%;
+    height: 50vh;
+    text-align: center;
+}
+
+.report h2{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-family: 'Montserrat';
+
+}
+
+div.form-example > label {
+    float: left;
+}
+
+.report form{
     width: 50%;
+    height: 500px;
+    margin: auto;
+    padding: 3%;
+    font-size: 1.2em;
+    background-color: white;
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#zone{
+    width: 60%;
+    margin-bottom: 5%;
+}
+
+#date{
+    width: 60%;
+    margin-bottom: 5%;
+}
+
+textarea{
+    width: 60%;
+    min-height: 150px !important;
+    margin-bottom: 8%;
+}
+.form-control{
+    height: 2%;
+    background: #fff;
+    color: #000;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0.375rem 0.75rem;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn-primary {
+    background: #02B3DF;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.btn {
+    margin-top: 3%;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-width: 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.map__list{
+    float: left;
+    width: 10%;
 }
 
 .map__list a.is-active{
 	color: #02B3DF;
     font-weight: bold;
-    text-decoration: underline;
+}
+
+ul{
+    list-style: none    ;
+}
+
+#clear{
+    margin-top: 3%;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    right: -15%;
 }
 
