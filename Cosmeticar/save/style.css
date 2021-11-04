@@ -1,0 +1,333 @@
+.svg{
+  width:700px;
+}
+
+#vitre_av_dr_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_milieu_dr_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_ar_dr_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_av_ga_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_milieu_ga_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_ar_ga_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#coffre_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#toit_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#pare_brise_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#coté_ga_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#coté_dr_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#aile_ga_av_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#aile_dr_av_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#capot_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#entre_vitre_av_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#entre_vitre_av_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#entre_vitre_ar_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#entre_vitre_ar_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_av_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_av_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_centrale_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_centrale_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_ar_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_ar_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_coffre_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_coffre_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#bas_de_caisse_ar_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#bas_de_caisse_ar_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#phare_ar_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#phare_ar_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#aile_ar_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#aile_ar_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#bas_de_caisse_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#bas_de_caisse_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#porte_av_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#porte_av_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#porte_ar_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#porte_ar_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#carro_toit_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#carro_toit_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#aile_av_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#aile_av_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#phare_av_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#phare_av_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#bas_de_caisse_av_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#bas_de_caisse_av_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#pneu_av_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#pneu_ar_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#pneu_ar_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#jante_av_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#jante_av_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#jante_ar_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#jante_ar_ga .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#vitre_ar_h .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#pneu_av_dr .st0:hover{
+  fill:#009fe4;
+  transition:0.3s;
+  cursor:pointer;
+}
