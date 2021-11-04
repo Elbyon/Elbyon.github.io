@@ -4,6 +4,19 @@ var paths = map.querySelectorAll('.map__image a')
 
 var links = map.querySelectorAll('.map__list a')
 
+var content = document.getElementById("content")
+var button = document.getElementById("show-more")
+
+button.onclick = function(){
+    if(content.classList.contains('open')){
+        content.classList.remove('open')
+        button.innerHTML = "Voir le Pack Control"
+    } else{
+        content.classList.add('open')
+        button.innerHTML = "Fermer le Pack Control"
+    }
+}
+
 //Polyfill du foreach
 if (NodeList.prototype.forEach === undefined){
     NodeList.prototype.forEach = function (callback){
@@ -19,8 +32,8 @@ var activeArea = function(id) {
         item.classList.remove('is-active')
     })
     if (id !== undefined){
-        document.querySelector('#list-' + id).classList.add('is-active')
-        document.querySelector('#region-' + id).classList.add('is-active')
+        document.querySelector('#list-' + id).classList.toggle('is-active')
+        document.querySelector('#region-' + id).classList.toggle('is-active')
     }
     
     
@@ -44,3 +57,6 @@ links.forEach(function (link){
         activeArea(id)
     })
 })
+
+document.getElementById('date').valueAsDate = new Date();
+
