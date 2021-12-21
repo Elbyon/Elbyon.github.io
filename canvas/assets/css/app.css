@@ -1,0 +1,95 @@
+*{
+    font-family: 'Montserrat';
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/**/
+/*SVG*/
+.map__image path{
+	fill: #adadad;
+    stroke: white;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+/*SVG si il est séléctionné*/
+.map__image .is-active path{
+	fill: #02B3DF;
+}
+
+/*Liste dans tableau si le SVG est séléctionné*/
+.map__list a.is-active{
+	color: #02B3DF;
+    font-weight: bold;
+}
+
+
+/*Arrondi custom pour le formulaire*/
+.rounded-custom{
+    border-radius: 1.5rem;
+}
+
+/*Pour le app.JS (dépliement du form)*/
+#content{
+    max-height: 0px;
+    overflow: hidden;
+
+    -webkit-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+}
+
+#content.open{
+    max-height: 10000px !important;
+
+    -webkit-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+}
+
+/*Custom légendes*/
+fieldset{
+    margin-left: 6%;
+    float: left;
+    width: 40%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 1%;
+}
+
+legend {
+    background-color: #02B3DF;
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 14px;
+}
+
+/*Ajout bordure externe sur les tableaux*/
+table{
+    border: 1px solid #dee2e6 !important;
+}
+
+.ml-6{
+    margin-left: 4rem !important;
+}
+
+.btn-color{
+    color: #fff;
+    background-color: #02B3DF;
+    border-color: #02B3DF;
+}
+
+.canvasStyle{
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 auto;
+}
+
+.single-image{
+    width: 150px;
+}

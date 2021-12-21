@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/app.css">
+    </head>
+    <body>
+        <!-- -->
+        <!-- Section de gauche (SVG + Tableaux) -->
+    	<div class="row map" id="map">
+            <div class="col-md-12 text-center mt-3">
+                <button type="button" id="BtnPrivee" class="btn btn-color mb-2">Véhicule privée</button>
+                <button type="button" id="BtnUtilitaire" class="btn btn-color mb-2">Véhicule utilitaire</button>
+                <button type="button" id="BtnPoidLourd" class="btn btn-color mb-2">Poids lourd</button>
+            </div>
+            <div class="col-md-12">
+                <canvas id="canvas" class="canvasStyle mt-1"></canvas>
+            </div>
+            <div class="col-md-12 text-center mt-3">
+                <button type="button" id="BtnClear" class="btn btn-danger mb-2">Clear</button>
+                <button type="button" id="BtnDownload" class="btn btn-success mb-2">Sauvegarder</button>
+            </div>
+		</div>
+        <script src="./assets/js/app.js"></script>
+        <script src="./assets/js/html2canvas.min.js"></script>
+    </body>
+</html>
