@@ -5,10 +5,10 @@ function positionSucces(position) {
   // Injection du résultat dans du texte
   const lat = Math.round(1000 * position.coords.latitude) / 1000;
   const long = Math.round(1000 * position.coords.longitude) / 1000;
-  $("p").text(`Latitude: ${lat}°, Longitude: ${long}°`);
+  $("p#loc-output").text(`Latitude: ${lat}°, Longitude: ${long}°`);
   var latlng = [lat, long];
   carte.flyTo(latlng);
-}
+} 
 
 // Appelée si échec de récuparation des coordonnées
 function positionErreur(erreurPosition) {

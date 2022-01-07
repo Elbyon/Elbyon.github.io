@@ -65,6 +65,9 @@ function getMovies(){
                     <img src="./media/Dune-Blu-ray.png" alt="Blu-Ray Dune"/>
                     <h6 class="mt-2">Blu-ray ${data3.original_title} (2021)</h6>
                     <p class="fsa">29,99€</p>
+                    <div class="mt-3">
+                        <a class="btnStyle" target="_blank" href="https://www.amazon.fr/gp/product/B09G3G97NQ?ie=UTF8&tag=antoinerigot-21&camp=1642&linkCode=xm2&creativeASIN=B09G3G97NQ">Achetez</a>
+                    </div>
                     </a>
                 </div>
                 <div class="cd amazon">
@@ -73,6 +76,9 @@ function getMovies(){
                     <img src="./media/Dune-CD.png" alt="CD Dune"/>
                     <h6 class="mt-2">${data3.original_title} (Original Soundtrack)</h6>
                     <p class="fsa">21,57€</p>
+                    <div class="mt-3">
+                        <a class="btnStyle" target="_blank" href="https://www.amazon.fr/gp/product/B09GKWB74J?ie=UTF8&tag=antoinerigot-21&camp=1642&linkCode=xm2&creativeASIN=B09GKWB74J">Achetez</a>
+                    </div>
                     </a>
                 </div>
             </div>
