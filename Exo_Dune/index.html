@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+        <link rel="icon" href="./media/favicon/favicon.jpg" />
+        <title>Dune</title>
+        <meta charset="utf-8"/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="./script/tmdb.js"></script>
+        <script src="script/cinema.geojson"></script>
+    </head>
+    <body id="body" class="jour">
+        <header id="header">
+            <a href="#" class="logo">Dune</a>
+            <ul>
+                <li><a href="#paralax">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#cinemas">Cinemas</a></li>
+            </ul>
+        </header>
+        <section id="paralax">
+            <img src="media/paralax/stars.png" alt="" id="stars">
+            <img src="media/paralax/moon.png" alt="" id="moon">
+            <img src="media/paralax/mountains_behind.png" alt="" id="mountains_behind">
+            <h2 id="text">Dune</h2>
+            <h3 id="baseline">by Denis Villeneuve</h3>
+            <a href="#about" id="btn">Explore</a>
+            <img src="media/paralax/mountains_front.png" alt="" id="mountains_front">
+            <a id="btnChange" class="jourBtn">Change</a>
+        </section>
+        <main id="main" class="mainJour">
+            <section id="about">
+                <div class="wrapper">
+                    <div class="one">
+                        <div id="iframeYT"></div>
+                    </div>
+                    <div id="synopsis" class="two">
+                        <div id="data_dune"></div>
+                        <!-- <p class="fontlittle">15 septembre 2021 / 2h36min / Science fiction, Drame</p>
+                        <p class="fontlittle">De Denis Villeneuve</p>
+                        <p class="fontlittle">Par Jon Spaihts, Denis Villeneuve</p>
+                        <p class="fontlittle">Avec Timothée Chalamet, Rebecca Ferguson, Oscar Isaac </p> -->
+                        <!-- <div class="lesBtn">
+                            <a href="https://www.youtube.com/watch?v=Qw3xs_hWxh4" target="_blank" id="btnBandeAnnonce" class="btnStyle">Bande annonce</a>
+                            <a href="#cinemas" id="btnSeances" class="btnStyle">Séances</a>
+                        </div>
+                        <h5>Synopsis</h5>
+                        <p>L'histoire de Paul Atreides, jeune homme aussi doué que brillant, voué à connaître un destin hors du commun qui le dépasse totalement. Car s'il veut préserver l'avenir de sa famille et de son peuple, il devra se rendre sur la planète la plus dangereuse de l'univers – la seule à même de fournir la ressource la plus précieuse au monde, capable de décupler la puissance de l'humanité. Tandis que des forces maléfiques se disputent le contrôle de cette planète, seuls ceux qui parviennent à dominer leur peur pourront survivre…
+                        </p>     -->
+                    </div>
+                </div>
+            </section>  
+            <section id="characters">
+                <div class="character-grid">
+                    <a href="character1.html" class="square">
+                        <div class="character">
+                            <div class="level">
+                            </div>
+                            <div class="image-container zoomIn">
+                                <img src="media/char1.jpg" class="char-image">
+                                <img class="imgfamlib white" src="media/logo/atreides.svg" alt="">
+                                <h3 class="h3lib">MAISON ATREIDES</h3>
+                                <h2 class="h2lib">PAUL ATREIDES</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="character2.html" class="square">
+                        <div class="character">
+                            <div class="level">
+                            </div>
+                            <div class="image-container zoomIn">
+                                <img src="media/char2.jpg" class="char-image">
+                                <img class="imgfamlib white" src="media/logo/atreides.svg" alt="">
+                                <h3 class="h3lib">MAISON ATREIDES</h3>
+                                <h2 class="h2lib">DUC LETO ATREIDES</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="character3.html" class="square">
+                        <div class="character">
+                            <div class="level">
+                            </div>
+                            <div class="image-container zoomIn">
+                                <img src="media/char3.jpg" class="char-image">
+                                <img class="imgfamlib white" src="media/logo/atreides.svg" alt="">
+                                <h3 class="h3lib">MAISON ATREIDES</h3>
+                                <h2 class="h2lib">DAME JESSICA ATREIDES</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="character4.html" class="square">
+                        <div class="character">
+                            <div class="level">
+                            </div>
+                            <div class="image-container zoomIn">
+                                <img src="media/char4.jpg" class="char-image">
+                                <img class="imgfamlib white" src="media/logo/atreides.svg" alt="">
+                                <h3 class="h3lib">MAISON ATREIDES</h3>
+                                <h2 class="h2lib">GURNEY HALLECK</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="character5.html" class="square">
+                        <div class="character">
+                            <div class="level">
+                            </div>
+                            <div class="image-container zoomIn">
+                                <img src="media/char5.jpg" class="char-image">
+                                <img class="imgfamlib white" src="media/logo/atreides.svg" alt="">
+                                <h3 class="h3lib">MAISON ATREIDES</h3>
+                                <h2 class="h2lib">DUCAN IDAHO</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="character6.html" class="square">
+                        <div class="character">
+                            <div class="level">
+                            </div>
+                            <div class="image-container zoomIn">
+                                <img src="media/char6.jpg" class="char-image">
+                                <img class="imgfamlib white" src="media/logo/atreides.svg" alt="">
+                                <h3 class="h3lib">MAISON ATREIDES</h3>
+                                <h2 class="h2lib">DR. WELLINGTON YUEH</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="character7.html" class="square">
+                        <div class="character">
+                            <div class="level">
+                            </div>
+                            <div class="image-container zoomIn">
+                                <img src="media/char7.jpg" class="char-image">
+                                <img class="imgfamlib white" src="media/logo/fremen.svg" alt="">
+                                <h3 class="h3lib">MAISON FREMEN</h3>
+                                <h2 class="h2lib">STILGAR</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="character8.html" class="square">
+                        <div class="character">
+                            <div class="level">
+                            </div>
+                            <div class="image-container zoomIn">
+                                <img src="media/char8.jpg" class="char-image">
+                                <img class="imgfamlib white" src="media/logo/fremen.svg" alt="">
+                                <h3 class="h3lib">MAISON FREMEN</h3>
+                                <h2 class="h2lib">CHANI</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="character9.html" class="square">
+                        <div class="character">
+                            <div class="level">
+                            </div>
+                            <div class="image-container zoomIn">
+                                <img src="media/char9.jpg" class="char-image">
+                                <img class="imgfamlib white" src="media/logo/harkonnen.svg" alt="">
+                                <h3 class="h3lib">MAISON HARKONNEN</h3>
+                                <h2 class="h2lib">VLADIMIR HARKONNEN</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="character10.html" class="square">
+                        <div class="character">
+                            <div class="level">
+                            </div>
+                            <div class="image-container zoomIn">
+                                <img src="media/char10.jpg" class="char-image">
+                                <img class="imgfamlib white" src="media/logo/harkonnen.svg" alt="">
+                                <h3 class="h3lib">MAISON HARKONNEN</h3>
+                                <h2 class="h2lib">BARBAN HARKONNEN</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section id="cinemas">
+                <div class="title_cinema">
+                    <h2>Retrouver Dune dans les cinémas proche de vous !</h2>
+                </div>
+                <div id="carte"></div>
+
+                <button>Localise moi !</button>
+                <p></p>
+            </section>
+        </main>
+        <script src="./script/script.js"></script>
+        <script src="./script/map.js"></script>
+    </body>
+    
+
+</html>
