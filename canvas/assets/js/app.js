@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', (ev)=>{
-    // let image1 = document.getElementById('vehicule_privee');
-    // let image2 = document.getElementById('vehicule_utilitaire');
-    // let image3 = document.getElementById('vehicule_poid_lourd');
+    //Instancie le canvas
     let canvas = document.getElementById('canvas');
     let ctx = canvas.getContext('2d');
-    canvas.width = 600;
-    canvas.height = 400;
+    canvas.width = 920;
+    canvas.height = 600;
 
     let imgObj = new Image();
     
+    //Gère la proportionnalité de la taille du canvas par rapport à l'image
     imgObj.onload = function(){
         let w = canvas.width;
         let nw = imgObj.naturalWidth;
@@ -20,14 +19,16 @@ document.addEventListener('DOMContentLoaded', (ev)=>{
         ctx.drawImage(imgObj, 0, 0, w, h);
     };
 
+    //Instancie les boutons
     let BtnPrivee = document.getElementById("BtnPrivee");
     let BtnUtilitaire = document.getElementById("BtnUtilitaire");
     let BtnPoidLourd = document.getElementById("BtnPoidLourd");
+    let BtnClear = document.getElementById("BtnClear");
+    let BtnDownload = document.getElementById("BtnDownload");
+    let BtnImpact = document.getElementById("impact");
+    let BtnRayure = document.getElementById("rayure");
 
-    BtnPrivee.onclick = changeToPrivee;
-    BtnUtilitaire.onclick = changeToUtilitaire;
-    BtnPoidLourd.onclick = changeToPoidLourd;
-
+    //Change l'image de fond
     function changeToPrivee(){
         imgObj.src="./assets/media/privee.png";
     }
@@ -38,61 +39,48 @@ document.addEventListener('DOMContentLoaded', (ev)=>{
         imgObj.src="./assets/media/poid_lourd.png";
     }
 
-    let BtnClear = document.getElementById("BtnClear");
-    BtnClear.onclick = clearCanvas;
+    //Clear le canvas
     function clearCanvas(){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 
-    let BtnDownload = document.getElementById("BtnDownload");
+    //onClick des btns
+    BtnPrivee.onclick = changeToPrivee;
+    BtnUtilitaire.onclick = changeToUtilitaire;
+    BtnPoidLourd.onclick = changeToPoidLourd;
+    BtnClear.onclick = clearCanvas;
+    BtnImpact.onclick = changeToImpact;
+    BtnRayure.onclick = changeToRayure;
 
-    // class ImpactShape{
-    //     constructor(xpos, ypos, radius, color){
-    //         this.xpos = xpos;
-    //         this.ypos = ypos;
-    //         this.radius = radius;
-    //         this.color = color;
-    //     }
+    //Définie la couleur du point au lancement
+    let draw_color = "red"
 
-    //     draw(ctx){
-    //         ctx.beginPath();
-    //         ctx.arc(this.xpos, this.ypos, this.radius, 0, Math.PI * 2, false);
-    //         ctx.stroke();
-    //     }
-    // }
+    //Change la couleur du point
+    function changeToImpact(){
+        draw_color = "red";
+    };
 
-    // let my_circle = new ImpactShape(50, 50, 25, "black");
+    function changeToRayure(){
+        draw_color = "orange";
+    };
 
-    // my_circle.draw(ctx);
+    // Création du point
+    let signaler = function(e){
+        let bounds = e.target.getBoundingClientRect();
+        let x = e.clientX - bounds.left;
+        let y = e.clientY - bounds.top;
 
-    let drawing = false;
-
-    function startPosition(e){
-        drawing = true;
-        draw(e);
-    }
-    function finishedPosition(){
-        drawing = false;
         ctx.beginPath();
+        ctx.arc(x,y,10,0,Math.PI*2,false);
+        ctx.fillStyle = draw_color;
+
+        ctx.fill();
     }
 
-    function draw(e){
-        if(!drawing){
-            return
-        }
-        ctx.lineWidth = 10;
-        ctx.lineCap = "round";
-        ctx.lineTo(e.clientX, e.clientY);
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(e.clientX, e.clientY);
-    }
+    canvas.addEventListener("mousedown", signaler);
+    
 
-    canvas.addEventListener("mousedown", startPosition);
-    canvas.addEventListener("mouseup", finishedPosition);
-    canvas.addEventListener("mousemove", draw);
-
-    // const dataURI = canvas.toDataURL("image/jpeg")
+    // Téléchargement du canvas au format png
     BtnDownload.addEventListener("click", function(){
         if(window.navigator.msSaveBlob){
             window.navigator.msSaveBlob(canvas.msToBlob(), "canvas-image.png");
@@ -106,10 +94,4 @@ document.addEventListener('DOMContentLoaded', (ev)=>{
             document.body.removeChild(a);
         }
     });
-
-    // const canvaFinal = document.getElementById('canvas');
-    // html2canvas(canvaFinal).then(function(canvas){
-    //     document.body.appendChild(canvas);
-    // });
-
 });

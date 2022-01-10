@@ -6,16 +6,18 @@
         <link rel="stylesheet" href="./assets/css/app.css">
     </head>
     <body>
-        <!-- -->
-        <!-- Section de gauche (SVG + Tableaux) -->
-    	<div class="row map" id="map">
+    	<div class="row">
             <div class="col-md-12 text-center mt-3">
                 <button type="button" id="BtnPrivee" class="btn btn-color mb-2">Véhicule privée</button>
                 <button type="button" id="BtnUtilitaire" class="btn btn-color mb-2">Véhicule utilitaire</button>
                 <button type="button" id="BtnPoidLourd" class="btn btn-color mb-2">Poids lourd</button>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-10">
                 <canvas id="canvas" class="canvasStyle mt-1"></canvas>
+            </div>
+            <div class="col-md-2 m-auto">
+                <button type="button" onClick="change_color(this)" id="impact" class="btn btn-warning d-block mb-3"><i class="fas fa-circle mr-2 fa-border-custom-2"></i>Signaler un impact</button>
+                <button type="button" onClick="change_color(this)" id="rayure" class="btn btn-warning d-block"><i class="fas fa-circle mr-2 fa-border-custom"></i>Signaler une rayure</button>
             </div>
             <div class="col-md-12 text-center mt-3">
                 <button type="button" id="BtnClear" class="btn btn-danger mb-2">Clear</button>
@@ -23,6 +25,6 @@
             </div>
 		</div>
         <script src="./assets/js/app.js"></script>
-        <script src="./assets/js/html2canvas.min.js"></script>
+        <script src="https://kit.fontawesome.com/3786b373ee.js" crossorigin="anonymous"></script>
     </body>
 </html>
